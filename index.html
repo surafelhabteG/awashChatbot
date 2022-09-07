@@ -3,6 +3,52 @@
         <title>Demo chate bot</title>
     </head>
     <body>
+      <style>
+        .rw-conversation-container .rw-header {
+          background-color: white !important;
+          color: black !important;
+          font-weight: lighter !important;
+        }
+        .rw-conversation-container .rw-header .rw-avatar {
+          width: 50px !important;
+          height: 50px !important;
+
+          border-radius: 50% !important;
+          border: #E5E5E5 solid 8px !important;
+          margin-top: -19px !important;
+        }
+        .rw-conversation-container .rw-title.rw-with-avatar{
+          left: 94px !important;
+        }
+        .rw-conversation-container .rw-header.rw-with-subtitle span.rw-with-avatar{
+          left: 94px !important;
+         
+        }
+        .rw-conversation-container{
+          width: 500px !important;
+        }
+        .rw-conversation-container .rw-response {
+          background-color: #000066 !important;
+          color: white !important;
+        }
+        .rw-conversation-container .rw-client {
+          background-color: #F88F33 !important;
+          color: white !important;
+        }
+
+        .rw-conversation-container .rw-avatar {
+          width: 50px !important;
+          height: 50px !important;
+
+          border-radius: 50% !important;
+          border: #E5E5E5 solid 8px !important;
+        }
+
+        .rw-dot {
+          background-color: #FFF !important;
+        }
+
+      </style>
         <script>!(function () {
             let e = document.createElement("script"),
               t = document.head || document.getElementsByTagName("head")[0];
@@ -13,9 +59,20 @@
               (e.onload = () => {
                 window.WebChat.default(
                   {
+                    initPayload:"",
                     customData: {"language": "en"},
-                    socketUrl: "http://localhost:5005",  
-                    socketPath: "/socket.io/"                
+                    socketUrl: "https://awash.360magic.link/",  
+                    socketPath: "/socket.io/",
+                    title: "Awash Bank",
+                    subtitle: "We typically reply in a minutes",
+                    profileAvatar: "./logo.svg",
+                    inputTextFieldHint: "Write a message ...",
+                    customMessageDelay: (message) => {
+                      let delay = message.length * 4000000;
+                      if (delay > 3 * 1000) delay = 3 * 1000000;
+                      if (delay < 800) delay = 8000000;
+                      return delay;
+                    }                
                   },
                   null
                 );
