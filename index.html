@@ -61,18 +61,18 @@
                   {
                     initPayload:"",
                     customData: {"language": "en"},
-                    socketUrl: "https://awash.360magic.link/",  
+                    socketUrl: "http://localhost:5005",  
                     socketPath: "/socket.io/",
                     title: "Awash Bank",
                     subtitle: "We typically reply in a minutes",
-                    profileAvatar: "./logo.svg",
+                    profileAvatar: 'https://www.awashbank.360ground.com/wp-content/uploads/2022/08/Vertical-logo.svg',
                     inputTextFieldHint: "Write a message ...",
-                    customMessageDelay: (message) => {
-                      let delay = message.length * 4000000;
-                      if (delay > 3 * 1000) delay = 3 * 1000000;
-                      if (delay < 800) delay = 8000000;
-                      return delay;
-                    }                
+                    // customMessageDelay: (message) => {
+                    //   let delay = message.length * 4000000;
+                    //   if (delay > 3 * 1000) delay = 3 * 1000000;
+                    //   if (delay < 800) delay = 8000000;
+                    //   return delay;
+                    // }                
                   },
                   null
                 );
