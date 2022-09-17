@@ -1,30 +1,197 @@
 version: "2.0"
 
 stories:
+  - story: welcome path
+    steps:
+      - intent: welcome
+      - action: utter_welcome
 
-- story: happy path
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+  - story: services information path
+    steps:
+      - intent: services_information
+      - action: utter_services_information
 
-- story: sad path 1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+  - story: special deposit account path
+    steps:
+      - intent: special_deposit_account
+      - action: utter_special_deposit_account
 
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  - story: lucy women special saving account path
+    steps:
+      - intent: lucy_women_special_saving_account
+      - action: utter_lucy_women_special_saving_account
+
+  - story: elders special saving account path
+    steps:
+      - intent: elders_special_saving_account
+      - action: utter_elders_special_saving_account
+
+  - story: smart children account path
+    steps:
+      - intent: smart_children_account
+      - action: utter_smart_children_account
+
+  - story: student solution account path
+    steps:
+      - intent: student_solution_account
+      - action: utter_student_solution_account
+
+  - story: salary drawing solution account path
+    steps:
+      - intent: salary_drawing_solution_account
+      - action: utter_salary_drawing_solution_account
+
+  - story: investment solution account path
+    steps:
+      - intent: investment_solution_account
+      - action: utter_investment_solution_account
+
+  - story: check payment solution scheme path
+    steps:
+      - intent: check_payment_solution_scheme
+      - action: utter_check_payment_solution_scheme
+
+  - story: provident fund solution account path
+    steps:
+      - intent: provident_fund_solution_account
+      - action: utter_provident_fund_solution_account
+
+  - story: wadiah student solution account path
+    steps:
+      - intent: wadiah_student_solution_account
+      - action: utter_wadiah_student_solution_account
+
+  - story: digital channel path
+    steps:
+      - intent: digital_channel
+      - action: utter_digital_channel
+
+  - story: mobile banking path
+    steps:
+      - intent: mobile_banking
+      - action: utter_mobile_banking
+
+  - story: agency banking path
+    steps:
+      - intent: agency_banking
+      - action: utter_agency_banking
+
+  - story: debt card service path
+    steps:
+      - intent: debt_card_service
+      - action: utter_debt_card_service
+
+  - story: online channel path
+    steps:
+      - intent: online_channel
+      - action: utter_online_channel
+
+  - story: foreign currency account path
+    steps:
+      - intent: foreign_currency_account
+      - action: utter_foreign_currency_account
+
+  - story: non transferable birr account path
+    steps:
+      - intent: non_transferable_birr_account
+      - action: utter_non_transferable_birr_account
+
+  - story: transferable birr account path
+    steps:
+      - intent: transferable_birr_account
+      - action: utter_transferable_birr_account
+
+  - story: transferable foreign currency account path
+    steps:
+      - intent: transferable_foreign_currency_account
+      - action: utter_transferable_foreign_currency_account
+
+  - story: account managment path
+    steps:
+      - intent: account_managment
+      - action: utter_account_managment
+
+  - story: saving account path
+    steps:
+      - intent: saving_account
+      - action: utter_saving_account
+
+  - story: current account path
+    steps:
+      - intent: current_account
+      - action: utter_current_account
+
+  - story: special saving account path
+    steps:
+      - intent: special_saving_account
+      - action: utter_special_saving_account
+
+  - story: other services path
+    steps:
+      - intent: other_services
+      - action: utter_other_services
+
+  - story: interest free banking path
+    steps:
+      - intent: interest_free_banking
+      - action: utter_interest_free_banking
+
+  - story: money transfer service path
+    steps:
+      - intent: money_transfer_service
+      - action: utter_money_transfer_service
+
+  - story: international banking service path
+    steps:
+      - intent: international_banking_service
+      - action: utter_international_banking_service
+
+  - story: consumer Loan for ethiopian diaspora path
+    steps:
+      - intent: consumer_Loan_for_ethiopian_diaspora
+      - action: utter_consumer_Loan_for_ethiopian_diaspora
+
+  - story: atm locator path
+    steps:
+      - intent: atm_locator
+      - action: utter_atm_locator
+
+  - story: branch locator path
+    steps:
+      - intent: branch_locator
+      - action: utter_branch_locator
+
+  - story: exchange rate path
+    steps:
+      - intent: exchange_rate
+      - action: utter_exchange_rate
+
+  - story: tatariwochu path
+    steps:
+      - intent: tatariwochu
+      - action: utter_tatariwochu
+
+  - story: contact support path
+    steps:
+      - intent: contact_support
+      - action: utter_contact_support
+
+  - story: internet banking path
+    steps:
+      - intent: internet_banking
+      - action: utter_internet_banking
+
+  - story: download awashbirr path
+    steps:
+      - intent: download_awashbirr
+      - action: utter_download_awashbirr
+
+  - story: help path
+    steps:
+      - intent: help
+      - action: utter_help
+
+  - story: invite link path
+    steps:
+      - intent: invite_link
+      - action: utter_invite_link

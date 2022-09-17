@@ -1,34 +1,266 @@
 version: "2.0"
 
 intents:
-  - greet
+  - welcome
+  - services_information
+  - special_deposit_account
+  - lucy_women_special_saving_account
+  - elders_special_saving_account
+  - smart_children_account
+  - student_solution_account
+  - salary_drawing_solution_account
+  - investment_solution_account
+  - check_payment_solution_scheme
+  - provident_fund_solution_account
+  - wadiah_student_solution_account
+  - digital_channel
+  - mobile_banking
+  - agency_banking
+  - debt_card_service
+  - online_channel
+  - foreign_currency_account
+  - non_transferable_birr_account
+  - transferable_birr_account
+  - transferable_foreign_currency_account
+  - account_managment
+  - saving_account
+  - current_account
+  - special_saving_account
+  - other_services
+  - interest_free_banking
+  - money_transfer_service
+  - international_banking_service
+  - consumer_Loan_for_ethiopian_diaspora
+  - atm_locator
+  - branch_locator
+  - exchange_rate
+  - tatariwochu
+  - contact_support
+  - internet_banking
+  - download_awashbirr
+  - help
+  - invite_link
   - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
 
 responses:
-  utter_greet:
-    - text: "Hey! How are you?"
+  utter_welcome:
+    - text: "Welcome to the Awash Bank Customer Helper Bot. \n Please select a service from the menu"
+      buttons:
+        - title: "Service information"
+          payload: "/services_information"
+        - title: "ATM Locator"
+          payload: "/atm_locator"
+        - title: "Branch Locator"
+          payload: "/branch_locator"
+        - title: "Exchange Rate"
+          payload: "/exchange_rate"
+        - title: "Tatariwochu"
+          payload: "/tatariwochu"
+        - title: "FAQ"
+          payload: "/faq"
+        - title: "Contact Support"
+          payload: "/contact_support"
+        - title: "Internet Banking"
+          payload: "/internet_banking"
+        - title: "Download AwashBirr"
+          payload: "/download_awashbirr"
+        - title: "Help"
+          payload: "/help"
+        - title: "Invite Link"
+          payload: "/invite_link"
 
-  utter_cheer_up:
-    - text: "Here is something to cheer you up:"
-      image: "https://i.imgur.com/nGF1K8f.jpg"
+  utter_services_information:
+    - text: "Please select one of the categories you want to know about."
+      buttons:
+        - title: "Special Deposit Account"
+          payload: "/special_deposit_account"
+        - title: "Digital Channel"
+          payload: "/digital_channel"
+        - title: "Foreign currency account"
+          payload: "/foreign_currency_account"
+        - title: "Account Managment"
+          payload: "/account_managment"
+        - title: "Other Services"
+          payload: "/other_services"
 
-  utter_did_that_help:
-    - text: "Did that help you?"
+  utter_special_deposit_account:
+    - text: "Please select one of the categories you want to know about."
+      buttons:
+        - title: "Lucy Women Special Saving Account"
+          payload: "/lucy_women_special_saving_account"
+        - title: "Special Saving Account For Elders"
+          payload: "/elders_special_saving_account"
+        - title: "Smart Children Account"
+          payload: "/smart_children_account"
+        - title: "Student Solution Account"
+          payload: "/student_solution_account"
+        - title: "Salary Drawing Solution Account"
+          payload: "/salary_drawing_solution_account"
+        - title: "Investment Solution Account"
+          payload: "/investment_solution_account"
+        - title: "Check Payment's Solution Scheme (CPSS)"
+          payload: "/check_payment_solution_scheme"
+        - title: "Provident Fund Solution Account"
+          payload: "/provident_fund_solution_account"
+        - title: "Wadiah student solution Account"
+          payload: "/wadiah_student_solution_account"
 
-  utter_happy:
-    - text: "Great, carry on!"
+  utter_lucy_women_special_saving_account:
+    - text: "This Special Savings Account is designed specifically to take care of and address the banking and savings needs of the Women Clients to play an essential part of every womens life, regardless of their financial position. \n Read more on : https://www.awashbank.com/lucy-women-special-saving-account/"
+
+  utter_elders_special_saving_account:
+    - text: "It is designed to empower elder citizens to independently carryout the day-to-day banking transactions with dignity and confidence. \n Read more on : https://www.awashbank.com/special-saving-account-for-elders/"
+
+  utter_smart_children_account:
+    - text: "The account is opened by parents/ guardians for a specific benefit of the children under 18 years of age to deposit money for their future career. Read more on : https://www.awashbank.com/smart-children-account/"
+
+  utter_student_solution_account:
+    - text: "The account is designed for full time higher education students to create the convenience in money transfers as well as a mechanism for further education. \n Read more on : https://www.awashbank.com/student-solution-account/"
+
+  utter_salary_drawing_solution_account:
+    - text: "The account is designed to benefit salaried individuals and their organization to facilitate payroll payment system through Bank account. \n Read more on : https://www.awashbank.com/salary-drawing-solution-account/"
+
+  utter_investment_solution_account:
+    - text: "The account is designed for individual Employees, Small and Medium Enterprises, Associations, Trade Unions, and etc. \n Read more on : https://www.awashbank.com/investment-solution-account/"
+
+  utter_check_payment_solution_scheme:
+    - text: "This schema is designed for those customers who have both saving account and current account in AIB. \n Read more on : https://www.awashbank.com/check-payments-solution-scheme-cpss/"
+
+  utter_provident_fund_solution_account:
+    - text: "The Bank may grant a term loan facility to account holders, up to a maximum amount equal to the deposited Provident Fund amount, for the purchase of consumer durable goods: House, Vehicles or any other fixed asset. \n Read more on : https://www.awashbank.com/provident-fund-solution-account/"
+
+  utter_wadiah_student_solution_account:
+    - text: "The cost of education is on the rise and parents/students are looking for options to lighten the future financial burdens. The proposed Wadiah Student Solution Account of the Bank helps to deposit periodically smaller amounts to accumulate the required amount sufficient to cover their education fees in the long run without feeling this burden, and in a sharia compliant manner. \n Read more on : https://www.awashbank.com/wadiah-student-solution-account/"
+
+  utter_digital_channel:
+    - text: "Please select one of the categories you want to know about."
+      buttons:
+        - title: "Mobile Banking"
+          payload: "/mobile_banking"
+        - title: "Agency Banking"
+          payload: "/agency_banking"
+        - title: "Debt Card Service"
+          payload: "/debt_card_service"
+        - title: "Online Channel or Internet Banking"
+          payload: "/online_channel"
+
+  utter_mobile_banking:
+    - text: "Holder of any mobile device can use the service without internet connection but availability of a mobile network is required. \n Read more on : https://www.awashbank.com/mobile-banking/"
+
+  utter_agency_banking:
+    - text: "Agency banking is service provided by authorized Awash bank agents as per the Directive of the National Bank of Ethiopia (NBE). \n Read more on : https://www.awashbank.com/agency-banking-2/"
+
+  utter_debt_card_service:
+    - text: "Awash bank puts ATMs at convenient locations for all its own Awash Card, Visa Card, Master Card, China union pay cardholders. \n Read more on : https://www.awashbank.com/debit-card-service/"
+
+  utter_online_channel:
+    - text: "The application is optimized for   desktop, laptop and tablet platforms too, and both mouse and touch screen navigation. \n Read more on : https://www.awashbank.com/online-channel-internet-banking/"
+
+  utter_foreign_currency_account:
+    - text: "Please select one of the categories you want to know about."
+      buttons:
+        - title: "Non Resident Non Transferable Birr Account"
+          payload: "/non_transferable_birr_account"
+        - title: "Non Resident Transferable Birr Account"
+          payload: "/transferable_birr_account"
+        - title: "Non Resident Transferable Foreign currency Account"
+          payload: "/transferable_foreign_currency_account"
+
+  utter_non_transferable_birr_account:
+    - text: "All Ethiopian nationals living and working abroad for More than one year or business entities owned by non-resident Ethiopians and located outside Ethiopian territory for More than one year may open the following foreign currency accounts. \n Read more on : https://www.awashbank.com/non-resident-non-transferable-birr-accounts/"
+
+  utter_transferable_birr_account:
+    - text: "Non-Resident Non-Transferable birr accounts are also non-interest bearing accounts but they are denominated in Birr. \n Read more on : https://www.awashbank.com/non-resident-transferable-birr-accounts/"
+
+  utter_transferable_foreign_currency_account:
+    - text: "Non-resident foreign currency account is a non-interest bearing account denominated in foreign currency. \n Read more on : https://www.awashbank.com/non-resident-transferable-foreign-currency-accounts/"
+
+  utter_account_managment:
+    - text: "Please select one of the categories you want to know about."
+      buttons:
+        - title: "Saving Account"
+          payload: "/saving_account"
+        - title: "Current Account"
+          payload: "/current_account"
+        - title: "Special Saving Account"
+          payload: "/special_saving_account"
+
+  utter_saving_account:
+    - text: "Savings account is an interest bearing deposit that pays monthly interest on the minimum balance of the account in the month and operated through the usage of a passbook or without passbook depending on the demand of the customer. \n Read more on : https://www.awashbank.com/saving-account/"
+
+  utter_current_account:
+    - text: "Current account is a non-interest bearing deposit that shall be operated through the usage of cheque. \n Read more on : https://www.awashbank.com/current-account/"
+
+  utter_special_saving_account:
+    - text: "It is a savings account maintained for those who are interested to save their money to get interest and effect payments through cheque. \n Read more on : https://www.awashbank.com/special-savings-account/"
+
+  utter_other_services:
+    - text: "Please select one of the categories you want to know about."
+      buttons:
+        - title: "Interest Free Banking"
+          payload: "/interest_free_banking"
+        - title: "Money Transfer Service"
+          payload: "/money_transfer_service"
+        - title: "International Banking Service"
+          payload: "/international_banking_service"
+        - title: "Consumer Loan For Ethiopian Diaspora"
+          payload: "/consumer_Loan_for_ethiopian_diaspora"
+
+  utter_interest_free_banking:
+    - text: "All Service-based products parallel with the conventional banking one \n Read more on : https://www.awashbank.com/interest-free-banking/."
+
+  utter_money_transfer_service:
+    - text: "Handling incoming money transfers from abroad via International Money transfer agents working with the Bank. \n Read more on : https://www.awashbank.com/money-transfer-services/"
+
+  utter_international_banking_service:
+    - text: "Export by cash against document and consignment for perishable items. \n Read more on : https://www.awashbank.com/international-banking-services/"
+
+  utter_consumer_Loan_for_ethiopian_diaspora:
+    - text: "Consumer loan for Ethiopian Diaspora is among Awash Banks products devised to address Ethiopian Diaspora Community interests. Loans both under Conventional and Interest Free Banking (IFB) Schemes have the following purpose. \n Read more on : https://www.awashbank.com/consumer-loan-for-ethiopian-diaspora/"
+
+  utter_atm_locator:
+    - text: "sorry! service not available"
+
+  utter_branch_locator:
+    - text: "sorry! service not available"
+
+  utter_exchange_rate:
+    - text: "sorry! service not available"
+
+  utter_tatariwochu:
+    - text: "Dear Compitants, First Round is closed Now! For the next Compitition  We inform you soon as we ready! For More Call 8980"
+
+  utter_contact_support:
+    - text: "Call 8980 to contact Awash Bank Support"
+
+  utter_internet_banking:
+    - text: "Open this Link: https://www.awashonline.com.et/"
+
+  utter_download_awashbirr:
+    - text: "Open this link: https://play.google.com/store/apps/"
+
+  utter_help:
+    - text: "This bot provides information about service provided by Awash Bank."
+    - text: "You can get exchange rates directly in the bot."
+    - text: "Use the faq to get answers for the most frequently asked questions."
+
+  utter_invite_link:
+    - text: "Thank you for sharing this bot. Send this link"
+    - text: "http://t.me/awash_bank_info_bot or use @Awash_Bank_Info_Bot to open this bot."
 
   utter_goodbye:
-    - text: "Bye"
+    - text: "Thank you for using Awash Bank Customer Helper Bot. Have a good day"
 
-  utter_iamabot:
-    - text: "Welcome to awash bank  Got any questions? I'm happy to help."
+  # utter_cheer_up:
+  #   - text: "Here is something to cheer you up:"
+  #     image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  # utter_did_that_help:
+  #   - text: "Did that help you?"
+
+  # utter_happy:
+  #   - text: "Great, carry on!"
 
 session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+  session_expiration_time: 1
+  carry_over_slots_to_new_session: false

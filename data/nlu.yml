@@ -1,92 +1,185 @@
 version: "2.0"
 
 nlu:
-- intent: greet
-  examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+  - intent: welcome
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
 
-- intent: goodbye
-  examples: |
-    - good afternoon
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+  - intent: services_information
+    examples: |
+      - services information
 
-- intent: affirm
-  examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+  - intent: special_deposit_account
+    examples: |
+      - special deposit account
 
-- intent: deny
-  examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+  - intent: lucy_women_special_saving_account
+    examples: |
+      - lucy women special saving account
 
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+  - intent: elders_special_saving_account
+    examples: |
+      - elders special saving account
 
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+  - intent: smart_children_account
+    examples: |
+      - smart children account
 
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+  - intent: student_solution_account
+    examples: |
+      - student solution account
+
+  - intent: salary_drawing_solution_account
+    examples: |
+      - salary drawing solution account
+
+  - intent: investment_solution_account
+    examples: |
+      - investment solution account
+
+  - intent: check_payment_solution_scheme
+    examples: |
+      - check payment solution scheme
+
+  - intent: provident_fund_solution_account
+    examples: |
+      - provident fund solution account
+
+  - intent: wadiah_student_solution_account
+    examples: |
+      - wadiah student solution account
+
+  - intent: digital_channel
+    examples: |
+      - digital channel
+
+  - intent: mobile_banking
+    examples: |
+      - mobile banking
+
+  - intent: agency_banking
+    examples: |
+      - agency banking
+
+  - intent: debt_card_service
+    examples: |
+      - debt card service
+
+  - intent: online_channel
+    examples: |
+      - online channel
+
+  - intent: foreign_currency_account
+    examples: |
+      - foreign currency account
+
+  - intent: non_transferable_birr_account
+    examples: |
+      - non transferable birr account
+
+  - intent: transferable_birr_account
+    examples: |
+      - transferable birr account
+
+  - intent: transferable_foreign_currency_account
+    examples: |
+      - transferable foreign currency account
+
+  - intent: account_managment
+    examples: |
+      - account managment
+
+  - intent: saving_account
+    examples: |
+      - saving account
+
+  - intent: current_account
+    examples: |
+      - current account
+
+  - intent: special_saving_account
+    examples: |
+      - special saving account
+
+  - intent: other_services
+    examples: |
+      - other services
+
+  - intent: interest_free_banking
+    examples: |
+      - interest free banking
+
+  - intent: money_transfer_service
+    examples: |
+      - money transfer service
+
+  - intent: international_banking_service
+    examples: |
+      - international banking service
+
+  - intent: consumer_Loan_for_ethiopian_diaspora
+    examples: |
+      - consumer Loan for ethiopian diaspora
+
+  - intent: atm_locator
+    examples: |
+      - atm locator
+
+  - intent: branch_locator
+    examples: |
+      - branch locator
+
+  - intent: exchange_rate
+    examples: |
+      - exchange rate
+
+  - intent: tatariwochu
+    examples: |
+      - tatariwochu
+
+  - intent: contact_support
+    examples: |
+      - contact support
+
+  - intent: internet_banking
+    examples: |
+      - internet banking
+
+  - intent: download_awashbirr
+    examples: |
+      - download awashbirr
+
+  - intent: help
+    examples: |
+      - help
+      - needs
+
+  - intent: invite_link
+    examples: |
+      - invite link
+
+  - intent: goodbye
+    examples: |
+      - good afternoon
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later

@@ -10,13 +10,22 @@
           font-weight: lighter !important;
         }
         .rw-conversation-container .rw-header .rw-avatar {
-          width: 50px !important;
-          height: 50px !important;
+          width: 33px !important;
+          height: 33px !important;
 
           border-radius: 50% !important;
           border: #E5E5E5 solid 8px !important;
           margin-top: -19px !important;
+
         }
+
+        .rw-conversation-container .rw-avatar {
+          width: 33px !important;
+          height: 33px !important;
+          margin-right: 19px !important;
+          margin-bottom: 15px !important;
+        }
+
         .rw-conversation-container .rw-title.rw-with-avatar{
           left: 94px !important;
         }
@@ -30,7 +39,12 @@
         .rw-conversation-container .rw-response {
           background-color: #000066 !important;
           color: white !important;
+          max-width: 60% !important;
         }
+        .rw-conversation-container .rw-message {
+          flex-wrap: nowrap !important;
+        }
+
         .rw-conversation-container .rw-client {
           background-color: #F88F33 !important;
           color: white !important;
@@ -44,8 +58,21 @@
           border: #E5E5E5 solid 8px !important;
         }
 
+        .rw-conversation-container .rw-message-text .rw-markdown p:last-child {
+          font-size: 15px !important;
+        }
+        .rw-conversation-container .rw-message-text{
+          font-size: 15px !important;
+        }
+
         .rw-dot {
           background-color: #FFF !important;
+        }
+
+        .rw-conversation-container .rw-reply {
+          background-color: transparent !important;
+          border: 1px solid orange !important;
+          color: #000066 !important;
         }
 
       </style>
@@ -66,6 +93,7 @@
                     title: "Awash Bank",
                     subtitle: "We typically reply in a minutes",
                     profileAvatar: 'https://www.awashbank.360ground.com/wp-content/uploads/2022/08/Vertical-logo.svg',
+                    storage: 'session',
                     inputTextFieldHint: "Write a message ...",
                     // customMessageDelay: (message) => {
                     //   let delay = message.length * 4000000;
