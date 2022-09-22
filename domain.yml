@@ -40,11 +40,35 @@ intents:
   - download_awashbirr
   - help
   - invite_link
+  - faq
+  - FAQ1
+  - FAQ2
+  - FAQ3
+  - FAQ4
+  - FAQ5
+  - FAQ6
+  - FAQ7
+  - FAQ8
+  - FAQ9
+  - FAQ10
+  - FAQ11
+  - FAQ12
+  - FAQ13
+  - FAQ14
+  - FAQ15
+  - FAQ16
+  - FAQ17
+  - FAQ18
+  - FAQ19
+  - FAQ20
+  - FAQ21
+  - live_chat
+  - open_live_chat
   - goodbye
 
 responses:
   utter_welcome:
-    - text: "Welcome to the Awash Bank Customer Helper Bot. \n Please select a service from the menu"
+    - text: "Welcome to the Awash Bank Customer Helper Bot.\n Please select a service from the menu"
       buttons:
         - title: "Service information"
           payload: "/services_information"
@@ -68,6 +92,8 @@ responses:
           payload: "/help"
         - title: "Invite Link"
           payload: "/invite_link"
+        - title: "Live Chat Support"
+          payload: "/live_chat"
 
   utter_services_information:
     - text: "Please select one of the categories you want to know about."
@@ -82,6 +108,8 @@ responses:
           payload: "/account_managment"
         - title: "Other Services"
           payload: "/other_services"
+        - title: "Previous Menu"
+          payload: "menu"
 
   utter_special_deposit_account:
     - text: "Please select one of the categories you want to know about."
@@ -104,33 +132,62 @@ responses:
           payload: "/provident_fund_solution_account"
         - title: "Wadiah student solution Account"
           payload: "/wadiah_student_solution_account"
+        - title: "Previous Menu"
+          payload: "/services_information"
 
   utter_lucy_women_special_saving_account:
     - text: "This Special Savings Account is designed specifically to take care of and address the banking and savings needs of the Women Clients to play an essential part of every womens life, regardless of their financial position. \n Read more on : https://www.awashbank.com/lucy-women-special-saving-account/"
+      buttons:
+        - title: "Previous Menu"
+          payload: "/special_deposit_account"
 
   utter_elders_special_saving_account:
     - text: "It is designed to empower elder citizens to independently carryout the day-to-day banking transactions with dignity and confidence. \n Read more on : https://www.awashbank.com/special-saving-account-for-elders/"
+      buttons:
+        - title: "Previous Menu"
+          payload: "/special_deposit_account"
 
   utter_smart_children_account:
     - text: "The account is opened by parents/ guardians for a specific benefit of the children under 18 years of age to deposit money for their future career. Read more on : https://www.awashbank.com/smart-children-account/"
+      buttons:
+        - title: "Previous Menu"
+          payload: "/special_deposit_account"
 
   utter_student_solution_account:
     - text: "The account is designed for full time higher education students to create the convenience in money transfers as well as a mechanism for further education. \n Read more on : https://www.awashbank.com/student-solution-account/"
+      buttons:
+        - title: "Previous Menu"
+          payload: "/special_deposit_account"
 
   utter_salary_drawing_solution_account:
     - text: "The account is designed to benefit salaried individuals and their organization to facilitate payroll payment system through Bank account. \n Read more on : https://www.awashbank.com/salary-drawing-solution-account/"
+      buttons:
+        - title: "Previous Menu"
+          payload: "/special_deposit_account"
 
   utter_investment_solution_account:
     - text: "The account is designed for individual Employees, Small and Medium Enterprises, Associations, Trade Unions, and etc. \n Read more on : https://www.awashbank.com/investment-solution-account/"
+      buttons:
+        - title: "Previous Menu"
+          payload: "/special_deposit_account"
 
   utter_check_payment_solution_scheme:
     - text: "This schema is designed for those customers who have both saving account and current account in AIB. \n Read more on : https://www.awashbank.com/check-payments-solution-scheme-cpss/"
+      buttons:
+        - title: "Previous Menu"
+          payload: "/special_deposit_account"
 
   utter_provident_fund_solution_account:
     - text: "The Bank may grant a term loan facility to account holders, up to a maximum amount equal to the deposited Provident Fund amount, for the purchase of consumer durable goods: House, Vehicles or any other fixed asset. \n Read more on : https://www.awashbank.com/provident-fund-solution-account/"
+      buttons:
+        - title: "Previous Menu"
+          payload: "/special_deposit_account"
 
   utter_wadiah_student_solution_account:
     - text: "The cost of education is on the rise and parents/students are looking for options to lighten the future financial burdens. The proposed Wadiah Student Solution Account of the Bank helps to deposit periodically smaller amounts to accumulate the required amount sufficient to cover their education fees in the long run without feeling this burden, and in a sharia compliant manner. \n Read more on : https://www.awashbank.com/wadiah-student-solution-account/"
+      buttons:
+        - title: "Previous Menu"
+          payload: "/special_deposit_account"
 
   utter_digital_channel:
     - text: "Please select one of the categories you want to know about."
@@ -143,18 +200,32 @@ responses:
           payload: "/debt_card_service"
         - title: "Online Channel or Internet Banking"
           payload: "/online_channel"
+        - title: "Previous Menu"
+          payload: "/services_information"
 
   utter_mobile_banking:
     - text: "Holder of any mobile device can use the service without internet connection but availability of a mobile network is required. \n Read more on : https://www.awashbank.com/mobile-banking/"
+      buttons:
+        - title: "Previous Menu"
+          payload: "/digital_channel"
 
   utter_agency_banking:
     - text: "Agency banking is service provided by authorized Awash bank agents as per the Directive of the National Bank of Ethiopia (NBE). \n Read more on : https://www.awashbank.com/agency-banking-2/"
+      buttons:
+        - title: "Previous Menu"
+          payload: "/digital_channel"
 
   utter_debt_card_service:
     - text: "Awash bank puts ATMs at convenient locations for all its own Awash Card, Visa Card, Master Card, China union pay cardholders. \n Read more on : https://www.awashbank.com/debit-card-service/"
+      buttons:
+        - title: "Previous Menu"
+          payload: "/digital_channel"
 
   utter_online_channel:
     - text: "The application is optimized for   desktop, laptop and tablet platforms too, and both mouse and touch screen navigation. \n Read more on : https://www.awashbank.com/online-channel-internet-banking/"
+      buttons:
+        - title: "Previous Menu"
+          payload: "/digital_channel"
 
   utter_foreign_currency_account:
     - text: "Please select one of the categories you want to know about."
@@ -165,15 +236,26 @@ responses:
           payload: "/transferable_birr_account"
         - title: "Non Resident Transferable Foreign currency Account"
           payload: "/transferable_foreign_currency_account"
+        - title: "Previous Menu"
+          payload: "/services_information"
 
   utter_non_transferable_birr_account:
     - text: "All Ethiopian nationals living and working abroad for More than one year or business entities owned by non-resident Ethiopians and located outside Ethiopian territory for More than one year may open the following foreign currency accounts. \n Read more on : https://www.awashbank.com/non-resident-non-transferable-birr-accounts/"
+      buttons:
+        - title: "Previous Menu"
+          payload: "/foreign_currency_account"
 
   utter_transferable_birr_account:
     - text: "Non-Resident Non-Transferable birr accounts are also non-interest bearing accounts but they are denominated in Birr. \n Read more on : https://www.awashbank.com/non-resident-transferable-birr-accounts/"
+      buttons:
+        - title: "Previous Menu"
+          payload: "/foreign_currency_account"
 
   utter_transferable_foreign_currency_account:
     - text: "Non-resident foreign currency account is a non-interest bearing account denominated in foreign currency. \n Read more on : https://www.awashbank.com/non-resident-transferable-foreign-currency-accounts/"
+      buttons:
+        - title: "Previous Menu"
+          payload: "/foreign_currency_account"
 
   utter_account_managment:
     - text: "Please select one of the categories you want to know about."
@@ -184,15 +266,26 @@ responses:
           payload: "/current_account"
         - title: "Special Saving Account"
           payload: "/special_saving_account"
+        - title: "Previous Menu"
+          payload: "/services_information"
 
   utter_saving_account:
     - text: "Savings account is an interest bearing deposit that pays monthly interest on the minimum balance of the account in the month and operated through the usage of a passbook or without passbook depending on the demand of the customer. \n Read more on : https://www.awashbank.com/saving-account/"
+      buttons:
+        - title: "Previous Menu"
+          payload: "/account_managment"
 
   utter_current_account:
     - text: "Current account is a non-interest bearing deposit that shall be operated through the usage of cheque. \n Read more on : https://www.awashbank.com/current-account/"
+      buttons:
+        - title: "Previous Menu"
+          payload: "/account_managment"
 
   utter_special_saving_account:
     - text: "It is a savings account maintained for those who are interested to save their money to get interest and effect payments through cheque. \n Read more on : https://www.awashbank.com/special-savings-account/"
+      buttons:
+        - title: "Previous Menu"
+          payload: "/account_managment"
 
   utter_other_services:
     - text: "Please select one of the categories you want to know about."
@@ -205,48 +298,333 @@ responses:
           payload: "/international_banking_service"
         - title: "Consumer Loan For Ethiopian Diaspora"
           payload: "/consumer_Loan_for_ethiopian_diaspora"
+        - title: "Previous Menu"
+          payload: "/services_information"
 
   utter_interest_free_banking:
     - text: "All Service-based products parallel with the conventional banking one \n Read more on : https://www.awashbank.com/interest-free-banking/."
+      buttons:
+        - title: "Previous Menu"
+          payload: "/other_services"
 
   utter_money_transfer_service:
     - text: "Handling incoming money transfers from abroad via International Money transfer agents working with the Bank. \n Read more on : https://www.awashbank.com/money-transfer-services/"
+      buttons:
+        - title: "Previous Menu"
+          payload: "/other_services"
 
   utter_international_banking_service:
     - text: "Export by cash against document and consignment for perishable items. \n Read more on : https://www.awashbank.com/international-banking-services/"
+      buttons:
+        - title: "Previous Menu"
+          payload: "/other_services"
 
   utter_consumer_Loan_for_ethiopian_diaspora:
     - text: "Consumer loan for Ethiopian Diaspora is among Awash Banks products devised to address Ethiopian Diaspora Community interests. Loans both under Conventional and Interest Free Banking (IFB) Schemes have the following purpose. \n Read more on : https://www.awashbank.com/consumer-loan-for-ethiopian-diaspora/"
+      buttons:
+        - title: "Previous Menu"
+          payload: "/other_services"
 
   utter_atm_locator:
     - text: "sorry! service not available"
+      buttons:
+        - title: "Previous Menu"
+          payload: "menu"
 
   utter_branch_locator:
     - text: "sorry! service not available"
+      buttons:
+        - title: "Previous Menu"
+          payload: "menu"
 
   utter_exchange_rate:
     - text: "sorry! service not available"
+      buttons:
+        - title: "Previous Menu"
+          payload: "menu"
 
   utter_tatariwochu:
     - text: "Dear Compitants, First Round is closed Now! For the next Compitition  We inform you soon as we ready! For More Call 8980"
+      buttons:
+        - title: "Previous Menu"
+          payload: "menu"
 
   utter_contact_support:
     - text: "Call 8980 to contact Awash Bank Support"
+      buttons:
+        - title: "Previous Menu"
+          payload: "menu"
 
   utter_internet_banking:
     - text: "Open this Link: https://www.awashonline.com.et/"
+      buttons:
+        - title: "Previous Menu"
+          payload: "menu"
 
   utter_download_awashbirr:
     - text: "Open this link: https://play.google.com/store/apps/"
+      buttons:
+        - title: "Previous Menu"
+          payload: "menu"
 
   utter_help:
-    - text: "This bot provides information about service provided by Awash Bank."
-    - text: "You can get exchange rates directly in the bot."
-    - text: "Use the faq to get answers for the most frequently asked questions."
+    - text: "This bot provides information about service provided by Awash Bank.\nYou can get exchange rates directly in the bot.\nUse the faq to get answers for the most frequently asked questions."
+      buttons:
+        - title: "Previous Menu"
+          payload: "menu"
 
   utter_invite_link:
-    - text: "Thank you for sharing this bot. Send this link"
-    - text: "http://t.me/awash_bank_info_bot or use @Awash_Bank_Info_Bot to open this bot."
+    - text: "Thank you for sharing this bot. Send this link\n http://t.me/awash_bank_info_bot or use @Awash_Bank_Info_Bot to open this bot."
+      buttons:
+        - title: "Previous Menu"
+          payload: "menu"
+
+  utter_FAQ1:
+    - text:
+        "There are two ways to use M/Wallet. \nThe first one is: - \n -Dial *901# (No need of internet)\n - Insert your password
+        \n - Select the option you want\n The second one is:\n - Download AwashBirr App from Play Store or App store (It requires internet data)
+        \n - Insert your password\n - Select the option you want"
+      buttons:
+        - title: "Previous Menu"
+          payload: "/faq"
+
+  utter_FAQ2:
+    - text: "Information will be provided if the customer is able to respond calls validity accurately through 8980 customer line or You can get it via mobile banking service without calls validation"
+      buttons:
+        - title: "Previous Menu"
+          payload: "/faq"
+
+  utter_FAQ3:
+    - text: "Account balance will be provided if the customer is able to respond calls validity accurately through 8980 customer line or You can get it via mobile banking service without calls validation"
+      buttons:
+        - title: "Previous Menu"
+          payload: "/faq"
+
+  utter_FAQ4:
+    - text: "Exchange rate will be availed immediately without any call validation Using this Bot, Through 8980 customer line or You can get it via mobile banking service"
+      buttons:
+        - title: "Previous Menu"
+          payload: "/faq"
+
+  utter_FAQ5:
+    - text:
+        "If not reversed back to your account in a reasonable time, fill a dispute form
+        \n - In any branches of Awash Bank provided that the machine and the ATM card used belong to Awash Bank
+        \n - In any branches of Awash Bank or contact center via 8980 customer line provided that you are using other banks ATM with Awash Banks ATM card
+        \n - In both cases above, you shall pay attention to date and amount of transaction and ATM card number during applying for ATM dispute
+        \n - You will receive SMS alert through your mobile phone upon registration of your other banks ATM transaction failure
+        \n - You will also receive another SMS alert message on your mobile phone upon settlement of your case that was registered above
+        "
+      buttons:
+        - title: "Previous Menu"
+          payload: "/faq"
+
+  utter_FAQ6:
+    - text: "Adequate information will be availed immediately without any call validation through 8980 customer line or on this bot."
+      buttons:
+        - title: "Previous Menu"
+          payload: "/faq"
+
+  utter_FAQ7:
+    - text: "Proforma invoice, import /investment /Factory/ licence, and undertaking letter."
+      buttons:
+        - title: "Previous Menu"
+          payload: "/faq"
+
+  utter_FAQ8:
+    - text: "Foreign currency approval, valid import /investment / factory licence, proforma invoice, insurance certificate, permit, LC application(for LC), purchase order for (CAD), undertaking letter for (TT), other and letters from respective government authority based on the items to be imported."
+      buttons:
+        - title: "Previous Menu"
+          payload: "/faq"
+
+  utter_FAQ9:
+    - text: "Valid Export /investment /factory licence,Sales contract, LC for LC export, undertaking letter for CAD/ Consignment and TT Export, credit or cash sales advice ticket for advance payment export commercial invoice, export permit,and letters from respective government authority based on the items to be exported."
+      buttons:
+        - title: "Previous Menu"
+          payload: "/faq"
+
+  utter_FAQ10:
+    - text: "Request letter and availability of fund for the amendment requested based on the request type."
+      buttons:
+        - title: "Previous Menu"
+          payload: "/faq"
+
+  utter_FAQ11:
+    - text: "Physical presentation of documents as per NBE directive."
+      buttons:
+        - title: "Previous Menu"
+          payload: "/faq"
+
+  utter_FAQ12:
+    - text: "To process opening of a saving account,\n - Valid Identity card \n - two passport size photographs\n - Initial deposit"
+      buttons:
+        - title: "Previous Menu"
+          payload: "/faq"
+
+  utter_FAQ13:
+    - text: "The procedure to open a current account: \n - Valid Identity card
+        \n - TIN certificate
+        \n - Business Permit (License)
+        \n - Trade Registration Certificate
+        \n - Memorandum and Articles of Association (For Private Companies)
+        \n - Initial deposit
+        "
+      buttons:
+        - title: "Previous Menu"
+          payload: "/faq"
+
+  utter_FAQ14:
+    - text: "The customer requires to have account with the bank before opening of Fixed Time Deposit account Negotiate with the branch manager for the interest rate"
+      buttons:
+        - title: "Previous Menu"
+          payload: "/faq"
+
+  utter_FAQ15:
+    - text:
+        "Smart Children account is a type of savings account. The procedure to open account:
+        \n - Children under 18 years of age
+        \n - Birth certificate of the minor
+        \n - Two passport size photos of the child
+        \n - To open by parent
+        \n - Valid Identity card,
+        \n - Two passport size photographs or
+        \n - Letter of appointment by court, in the case of a guardian and
+        \n - initial deposit
+        \n - then incentive-Gifts will be provided
+        "
+      buttons:
+        - title: "Previous Menu"
+          payload: "/faq"
+
+  utter_FAQ16:
+    - text: "Student solution account is a type of savings account.
+        \n - procedure to open account: -
+        \n - The Account should be available only to students
+        \n - Valid student identification card
+        \n - Initial deposit
+        \n - Then incentives - Bonus, ATM card free of card subscription fee and loan facility
+        "
+      buttons:
+        - title: "Previous Menu"
+          payload: "/faq"
+
+  utter_FAQ17:
+    - text: "The procedure to open salary solution account:-
+        \n - Available to only employees upon written request of their employers
+        \n -  Valid employee identification card
+        \n -  No Initial balance
+        \n -  ATM card shall be issued free of card subscription fee and
+        \n -  Access to credit/loan facility
+        "
+      buttons:
+        - title: "Previous Menu"
+          payload: "/faq"
+
+  utter_FAQ18:
+    - text: "The procedure to open account:-
+        \n - The account holder shall have both a current and a saving accounts
+        \n - The account holder shall give written authorization to the bank to link the saving account with the current account
+        \n - To provide ID, Tin No, Trade License, Trade Registration Certificate, Article and Memorandum of Association to open current account
+        \n - The account holder shall have a minimum of Birr 1,000,000 (One million only) in the saving account at all times
+        \n - If the balance in the saving account falls below the stipulated minimum amount, i.e., Birr 1,000,000 while paying the value of the cheque, the customer shall be communicated to maintain the balance
+        \n - Protect the customer from both financial and legal risks that may otherwise arise from dishonoring check presented for payment due to insufficient balance in the current account
+        "
+      buttons:
+        - title: "Previous Menu"
+          payload: "/faq"
+
+  utter_FAQ19:
+    - text: "The procedure to open an account:
+        \n - To provide ID, Tin No, Trade License, Trade Registration Certificate, Investment License, Article and Memorandum of Association to open current account
+        \n - Investment Solution Account shall be a kind of saving account that is designed for individuals or organizations with regular income to save a fixed amount of money every month to reach a fixed sum of money over a fixed period and earn higher interest
+        \n - The Bank and the depositor shall agree on a fixed amount of money to be deposited for the purpose of buying consumer durable goods, vehicles, house and machinery, and expanding business or other investments
+        \n - From the pre agreed amount, the customer shall save 40% within agreed deposit period, which shall range from minimum of one year to maximum of ten years, depending on the demand of the customers
+        \n - initial deposit
+        \n - Attractive interest rate and loan facility
+        "
+      buttons:
+        - title: "Previous Menu"
+          payload: "/faq"
+
+  utter_FAQ20:
+    - text: "The procedure to open an account:
+        \n - The provident Fund Solution Account Shall have a special time deposit features. The Account shall benefit different private organization and their employees with attractive interest rate along with access to loan facility
+        \n - The employees provident fund contribution, if any as well as the employers provident contribution amount shall be deposited monthly to this Account
+        \n - The account can be opened with zero balance in the name of individual employee
+        "
+      buttons:
+        - title: "Previous Menu"
+          payload: "/faq"
+
+  utter_FAQ21:
+    - text: "You can get internet banking or Mobile banking from the branch in which your account existed"
+      buttons:
+        - title: "Previous Menu"
+          payload: "/faq"
+
+  utter_live_chat:
+    - text: "Our live chat support technician are chat with you."
+      buttons:
+        - title: "Open Live Chat Window"
+          payload: "/open_live_chat"
+        - title: "Previous Menu"
+          payload: "menu"
+
+  utter_open_live_chat:
+    - text: "Welcome to our live chat service."
+      buttons:
+        - title: "Previous Menu"
+          payload: "menu"
+
+  utter_faq:
+    - text: "Please select one of the categories you want to know about."
+      buttons:
+        - title: "How do I use M-Wallet account ?"
+          payload: "FAQ1"
+        - title: "How do I request whether a deposit amount has been made or not to an account ?"
+          payload: "FAQ2"
+        - title: "How do I make account balance inquiry ?"
+          payload: "FAQ3"
+        - title: "How can I get exchange rates for today ?"
+          payload: "FAQ4"
+        - title: "How can request for support when ATM machine could not pay cash for him/her after the amount is deducted from account ?"
+          payload: "FAQ5"
+        - title: "How do request branch information ?"
+          payload: "FAQ6"
+        - title: "What are the requirements for foreign Currency Registration ?"
+          payload: "FAQ7"
+        - title: "What are the requirements for import ?"
+          payload: "FAQ8"
+        - title: "What are the requirements for export ?"
+          payload: "FAQ9"
+        - title: "How can I make LC amendment request ?"
+          payload: "FAQ10"
+        - title: "How can I make permit approval or purchase order approval request ?"
+          payload: "FAQ11"
+        - title: "What is needed to open a regular saving account ?"
+          payload: "FAQ12"
+        - title: "What is needed to open a current account ?"
+          payload: "FAQ13"
+        - title: "What is needed for fixed time deposit opening ?"
+          payload: "FAQ14"
+        - title: "What is needed for smart children account opening?"
+          payload: "FAQ15"
+        - title: "What is the required to open student solution account ?"
+          payload: "FAQ16"
+        - title: " What is the required to salary solution account ?"
+          payload: "FAQ17"
+        - title: "How can I open Check Payment Solution Scheme ?"
+          payload: "FAQ18"
+        - title: "How can I open Investment Solution Account ?"
+          payload: "FAQ19"
+        - title: "How can I open Investment Solution Account ?"
+          payload: "FAQ20"
+        - title: " How can I open provident fund solution account ?"
+          payload: "FAQ21"
+        - title: "How can I start with internet and mobile banking services ?"
+          payload: "FAQ22"
+        - title: "Previous Menu"
+          payload: "menu"
 
   utter_goodbye:
     - text: "Thank you for using Awash Bank Customer Helper Bot. Have a good day"

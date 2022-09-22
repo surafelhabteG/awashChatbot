@@ -195,3 +195,123 @@ stories:
     steps:
       - intent: invite_link
       - action: utter_invite_link
+
+  - story: faq path
+    steps:
+      - intent: faq
+      - action: utter_faq
+
+  - story: FAQ1 path
+    steps:
+      - intent: FAQ1
+      - action: utter_FAQ1
+
+  - story: FAQ2 path
+    steps:
+      - intent: FAQ2
+      - action: utter_FAQ2
+
+  - story: FAQ3 path
+    steps:
+      - intent: FAQ3
+      - action: utter_FAQ3
+
+  - story: FAQ4 path
+    steps:
+      - intent: FAQ4
+      - action: utter_FAQ4
+
+  - story: FAQ5 path
+    steps:
+      - intent: FAQ5
+      - action: utter_FAQ5
+
+  - story: FAQ6 path
+    steps:
+      - intent: FAQ6
+      - action: utter_FAQ6
+
+  - story: FAQ7 path
+    steps:
+      - intent: FAQ7
+      - action: utter_FAQ7
+
+  - story: FAQ8 path
+    steps:
+      - intent: FAQ8
+      - action: utter_FAQ8
+
+  - story: FAQ9 path
+    steps:
+      - intent: FAQ9
+      - action: utter_FAQ9
+
+  - story: FAQ10 path
+    steps:
+      - intent: FAQ10
+      - action: utter_FAQ10
+
+  - story: FAQ11 path
+    steps:
+      - intent: FAQ11
+      - action: utter_FAQ11
+
+  - story: FAQ12 path
+    steps:
+      - intent: FAQ12
+      - action: utter_FAQ12
+
+  - story: FAQ13 path
+    steps:
+      - intent: FAQ13
+      - action: utter_FAQ13
+
+  - story: FAQ14 path
+    steps:
+      - intent: FAQ14
+      - action: utter_FAQ14
+
+  - story: FAQ15 path
+    steps:
+      - intent: FAQ15
+      - action: utter_FAQ15
+
+  - story: FAQ16 path
+    steps:
+      - intent: FAQ16
+      - action: utter_FAQ16
+
+  - story: FAQ17 path
+    steps:
+      - intent: FAQ17
+      - action: utter_FAQ17
+
+  - story: FAQ18 path
+    steps:
+      - intent: FAQ18
+      - action: utter_FAQ18
+
+  - story: FAQ19 path
+    steps:
+      - intent: FAQ19
+      - action: utter_FAQ19
+
+  - story: FAQ20 path
+    steps:
+      - intent: FAQ20
+      - action: utter_FAQ20
+
+  - story: FAQ21 path
+    steps:
+      - intent: FAQ21
+      - action: utter_FAQ21
+
+  - story: live_chat path
+    steps:
+      - intent: live_chat
+      - action: utter_live_chat
+
+  - story: open_live_chat path
+    steps:
+      - intent: open_live_chat
+      - action: utter_open_live_chat

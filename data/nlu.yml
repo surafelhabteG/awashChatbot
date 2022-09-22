@@ -16,6 +16,10 @@ nlu:
       - goodmorning
       - goodevening
       - good afternoon
+      - start
+      - restart
+      - back
+      - main menu
 
   - intent: services_information
     examples: |
@@ -169,6 +173,102 @@ nlu:
   - intent: invite_link
     examples: |
       - invite link
+
+  - intent: faq
+    examples: |
+      - faq
+
+  - intent: FAQ1
+    examples: |
+      - FAQ1
+
+  - intent: FAQ2
+    examples: |
+      - FAQ2
+
+  - intent: FAQ3
+    examples: |
+      - FAQ3
+
+  - intent: FAQ4
+    examples: |
+      - FAQ4
+
+  - intent: FAQ5
+    examples: |
+      - FAQ5
+
+  - intent: FAQ6
+    examples: |
+      - FAQ6
+
+  - intent: FAQ7
+    examples: |
+      - FAQ7
+
+  - intent: FAQ8
+    examples: |
+      - FAQ8
+
+  - intent: FAQ9
+    examples: |
+      - FAQ9
+
+  - intent: FAQ10
+    examples: |
+      - FAQ10
+
+  - intent: FAQ11
+    examples: |
+      - FAQ11
+
+  - intent: FAQ12
+    examples: |
+      - FAQ12
+
+  - intent: FAQ13
+    examples: |
+      - FAQ13
+
+  - intent: FAQ14
+    examples: |
+      - FAQ14
+
+  - intent: FAQ15
+    examples: |
+      - FAQ15
+
+  - intent: FAQ16
+    examples: |
+      - FAQ16
+
+  - intent: FAQ17
+    examples: |
+      - FAQ17
+
+  - intent: FAQ18
+    examples: |
+      - FAQ18
+
+  - intent: FAQ19
+    examples: |
+      - FAQ19
+
+  - intent: FAQ20
+    examples: |
+      - FAQ20
+
+  - intent: FAQ21
+    examples: |
+      - FAQ21
+
+  - intent: live_chat
+    examples: |
+      - live_chat
+
+  - intent: open_live_chat
+    examples: |
+      - open_live_chat
 
   - intent: goodbye
     examples: |

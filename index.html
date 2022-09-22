@@ -29,6 +29,11 @@
         .rw-conversation-container .rw-title.rw-with-avatar{
           left: 94px !important;
         }
+
+        .rw-message .rw-with-avatar {
+          margin-top: 29px !important;
+        }
+
         .rw-conversation-container .rw-header.rw-with-subtitle span.rw-with-avatar{
           left: 94px !important;
          
@@ -39,10 +44,12 @@
         .rw-conversation-container .rw-response {
           background-color: #000066 !important;
           color: white !important;
-          max-width: 60% !important;
+          max-width: 100% !important;
+          margin-bottom: 28px !important;
         }
         .rw-conversation-container .rw-message {
           flex-wrap: nowrap !important;
+          margin-top: 15px !important;
         }
 
         .rw-conversation-container .rw-client {
@@ -73,10 +80,12 @@
           background-color: transparent !important;
           border: 1px solid orange !important;
           color: #000066 !important;
+          min-width: 87% !important;
+          padding: 9px !important;
         }
 
       </style>
-        <script>!(function () {
+        <!-- <script>!(function () {
             let e = document.createElement("script"),
               t = document.head || document.getElementsByTagName("head")[0];
             (e.src =
@@ -107,6 +116,9 @@
               }),
               t.insertBefore(e, t.firstChild);
           })();
-          </script>
+          </script> -->
+
+    <div id="rasa-chat-widget" data-websocket-url="http://localhost:5005/"></div>
+    <script src="https://unpkg.com/@rasahq/rasa-chat" type="application/javascript"></script>
     </body>
 </html>
