@@ -20,6 +20,24 @@ nlu:
       - restart
       - back
       - main menu
+      - language
+      - select language
+
+  - intent: አማርኛ
+    examples: |
+      - አማርኛ
+      - amharic
+
+  - intent: oromiffa
+    examples: |
+      - oromiffa
+      - ኦሮሚፋ
+      - ኦሮምኛ
+
+  - intent: english
+    examples: |
+      - english
+      - እንግሊዝኛ
 
   - intent: services_information
     examples: |

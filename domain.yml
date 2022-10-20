@@ -2,6 +2,9 @@ version: "2.0"
 
 intents:
   - welcome
+  - አማርኛ
+  - oromiffa
+  - english
   - services_information
   - special_deposit_account
   - lucy_women_special_saving_account
@@ -68,7 +71,29 @@ intents:
 
 responses:
   utter_welcome:
-    - text: "Welcome to the Awash Bank Customer Helper Bot.\n Please select a service from the menu"
+    - text: "Welcome to the Awash Bank Customer Helper Bot. Please select your language preference"
+      buttons:
+        - title: "English"
+          payload: "/english"
+        - title: "አማርኛ"
+          payload: "/አማርኛ"
+        - title: "Oromiffa"
+          payload: "/oromiffa"
+
+  utter_አማርኛ:
+    - text: "አገልግሎት አሁን በአማርኛ አይገኝም። እባክዎን ሌላ ጊዜ ይሞክሩ"
+      buttons:
+        - title: "Previous Menu"
+          payload: "language"
+
+  utter_oromiffa:
+    - text: "tajaajila afaan oromiffa yeroo ammaa hin arganne."
+      buttons:
+        - title: "Previous Menu"
+          payload: "language"
+
+  utter_english:
+    - text: "Please select a service from the menu"
       buttons:
         - title: "Service information"
           payload: "/services_information"
@@ -94,6 +119,8 @@ responses:
           payload: "/invite_link"
         - title: "Live Chat Support"
           payload: "/live_chat"
+        - title: "Previous Menu"
+          payload: "language"
 
   utter_services_information:
     - text: "Please select one of the categories you want to know about."
@@ -222,7 +249,7 @@ responses:
           payload: "/digital_channel"
 
   utter_online_channel:
-    - text: "The application is optimized for   desktop, laptop and tablet platforms too, and both mouse and touch screen navigation. \n Read more on : https://www.awashbank.com/online-channel-internet-banking/"
+    - text: "The application is optimized for desktop, laptop and tablet platforms too, and both mouse and touch screen navigation. \n Read more on : https://www.awashbank.com/online-channel-internet-banking/"
       buttons:
         - title: "Previous Menu"
           payload: "/digital_channel"

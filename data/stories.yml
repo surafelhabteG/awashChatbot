@@ -6,6 +6,21 @@ stories:
       - intent: welcome
       - action: utter_welcome
 
+  - story: አማርኛ path
+    steps:
+      - intent: አማርኛ
+      - action: utter_አማርኛ
+
+  - story: oromiffa path
+    steps:
+      - intent: oromiffa
+      - action: utter_oromiffa
+
+  - story: english path
+    steps:
+      - intent: english
+      - action: utter_english
+
   - story: services information path
     steps:
       - intent: services_information
